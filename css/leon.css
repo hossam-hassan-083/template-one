@@ -1,0 +1,124 @@
+/* start global rules */
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+font-family: "Work Sans", sans-serif;
+}
+
+.container{
+    padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+/* small */
+@media(min-width:768px){
+.container{
+    width: 750px;
+}
+}
+/* medium */
+@media(min-width:992px){
+.container{
+    width: 970px;
+}
+}
+/* large */
+@media(min-width:1200px){
+.container{
+    width: 1170px;
+}
+}
+/*  End gloabl */
+
+/* start Header */
+
+.header{
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+width: 60px;
+}
+
+.header .links {
+position: relative;
+}
+.header .links ul {
+    position: absolute;
+    list-style: none;
+    right: 0;
+    padding: 0;
+    margin: 0;
+min-width: 200px;
+background-color: #f6f6f6;
+top: calc(100% +15px);
+display: none;
+}
+.header .links:hover ul{
+    display: block;
+    pointer-events: painted;
+} 
+
+#icon {
+  font-size: 30px;      /* حجم الأيقونة */
+  color: black;           /* لون الأيقونة */
+  cursor: pointer;      /* يظهر شكل اليد عند المرور عليها */
+  margin: 10px;         /* هامش حول الأيقونة */
+}
+.header .links ul ::before{
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent  transparent  #dad4d4  transparent ;
+    right: 13px;
+    top: -20px;
+}
+
+.header .links ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration:none;
+    color: #222;
+}
+.header .links ul li a:hover{
+    padding-left: 25px;
+    transition:0.3s;
+    /* background-color: aqua; */
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.landing{
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 90px);
+}
+
+
+.landing .intro-text {
+    pos
+}
+.landing .intro-text h1{
+margin: 0;
+}
+.landing .intro-text p{
+
+}
